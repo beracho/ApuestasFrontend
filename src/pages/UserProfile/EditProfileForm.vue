@@ -101,10 +101,10 @@ export default {
         this.response = result.data;
         this.company = this.response.company;
         this.telephone = this.response.telephone;
-        this.lastname = this.response.lastname;
-        this.firstname = this.response.firstname;
+        this.lastname = this.response.lastName;
+        this.firstname = this.response.firstName;
         this.address = this.response.address;
-        this.aboutme = this.response.aboutme;
+        this.aboutme = this.response.aboutMe;
       }, error => {
         console.error(error);
       });
@@ -124,7 +124,7 @@ export default {
           address: this.address,
           password: this.password,
           aboutme: this.aboutme
-        }        
+        }
         axios({ method: "POST", "url": "http://localhost:5000/api/auth/CompleteRegister", "data": sendUser }).then(result => {
           this.response = result.data;
         }, error => {

@@ -12,37 +12,37 @@
             <div class="md-layout-item md-small-size-100 md-size-25" layout="column">
               <h3>Grupo A</h3>
               <md-list class="md-double-line">
-                <md-checkbox v-model="teams.a.eq1.checked" :value="this.teams.a.eq1.id">{{this.teams.a.eq1.name}}</md-checkbox>
-                <md-checkbox v-model="teams.a.eq2.checked" :value="this.teams.a.eq2.id">{{this.teams.a.eq2.name}}</md-checkbox>
-                <md-checkbox v-model="teams.a.eq3.checked" :value="this.teams.a.eq3.id">{{this.teams.a.eq3.name}}</md-checkbox>
-                <md-checkbox v-model="teams.a.eq4.checked" :value="this.teams.a.eq4.id">{{this.teams.a.eq4.name}}</md-checkbox>
+                <md-checkbox v-model="checkedA" :value="this.teams.a.eq1.id">{{this.teams.a.eq1.name}}</md-checkbox>
+                <md-checkbox v-model="checkedA" :value="this.teams.a.eq2.id">{{this.teams.a.eq2.name}}</md-checkbox>
+                <md-checkbox v-model="checkedA" :value="this.teams.a.eq3.id">{{this.teams.a.eq3.name}}</md-checkbox>
+                <md-checkbox v-model="checkedA" :value="this.teams.a.eq4.id">{{this.teams.a.eq4.name}}</md-checkbox>
               </md-list>
             </div>
             <div class="md-layout-item md-small-size-100 md-size-25">
               <h3>Grupo B</h3>
               <md-list class="md-double-line">
-                <md-checkbox v-model="teams.b.eq1.checked" :value="this.teams.b.eq1.id">{{this.teams.b.eq1.name}}</md-checkbox>
-                <md-checkbox v-model="teams.b.eq2.checked" :value="this.teams.b.eq2.id">{{this.teams.b.eq2.name}}</md-checkbox>
-                <md-checkbox v-model="teams.b.eq3.checked" :value="this.teams.b.eq3.id">{{this.teams.b.eq3.name}}</md-checkbox>
-                <md-checkbox v-model="teams.b.eq4.checked" :value="this.teams.b.eq4.id">{{this.teams.b.eq4.name}}</md-checkbox>
+                <md-checkbox v-model="checkedB" :value="this.teams.b.eq1.id">{{this.teams.b.eq1.name}}</md-checkbox>
+                <md-checkbox v-model="checkedB" :value="this.teams.b.eq2.id">{{this.teams.b.eq2.name}}</md-checkbox>
+                <md-checkbox v-model="checkedB" :value="this.teams.b.eq3.id">{{this.teams.b.eq3.name}}</md-checkbox>
+                <md-checkbox v-model="checkedB" :value="this.teams.b.eq4.id">{{this.teams.b.eq4.name}}</md-checkbox>
               </md-list>
             </div>
             <div class="md-layout-item md-small-size-100 md-size-25">
               <h3>Grupo C</h3>
               <md-list class="md-double-line">
-                <md-checkbox v-model="teams.c.eq1.checked" :value="this.teams.c.eq1.id">{{this.teams.c.eq1.name}}</md-checkbox>
-                <md-checkbox v-model="teams.c.eq2.checked" :value="this.teams.c.eq2.id">{{this.teams.c.eq2.name}}</md-checkbox>
-                <md-checkbox v-model="teams.c.eq3.checked" :value="this.teams.c.eq3.id">{{this.teams.c.eq3.name}}</md-checkbox>
-                <md-checkbox v-model="teams.c.eq4.checked" :value="this.teams.c.eq4.id">{{this.teams.c.eq4.name}}</md-checkbox>
+                <md-checkbox v-model="checkedC" :value="this.teams.c.eq1.id">{{this.teams.c.eq1.name}}</md-checkbox>
+                <md-checkbox v-model="checkedC" :value="this.teams.c.eq2.id">{{this.teams.c.eq2.name}}</md-checkbox>
+                <md-checkbox v-model="checkedC" :value="this.teams.c.eq3.id">{{this.teams.c.eq3.name}}</md-checkbox>
+                <md-checkbox v-model="checkedC" :value="this.teams.c.eq4.id">{{this.teams.c.eq4.name}}</md-checkbox>
               </md-list>
             </div>
             <div class="md-layout-item md-small-size-100 md-size-25">
               <h3>Grupo D</h3>
               <md-list class="md-double-line">
-                <md-checkbox v-model="teams.d.eq1.checked" :value="this.teams.d.eq1.id">{{this.teams.d.eq1.name}}</md-checkbox>
-                <md-checkbox v-model="teams.d.eq2.checked" :value="this.teams.d.eq2.id">{{this.teams.d.eq2.name}}</md-checkbox>
-                <md-checkbox v-model="teams.d.eq3.checked" :value="this.teams.d.eq3.id">{{this.teams.d.eq3.name}}</md-checkbox>
-                <md-checkbox v-model="teams.d.eq4.checked" :value="this.teams.d.eq4.id">{{this.teams.d.eq4.name}}</md-checkbox>
+                <md-checkbox v-model="checkedD" :value="this.teams.d.eq1.id">{{this.teams.d.eq1.name}}</md-checkbox>
+                <md-checkbox v-model="checkedD" :value="this.teams.d.eq2.id">{{this.teams.d.eq2.name}}</md-checkbox>
+                <md-checkbox v-model="checkedD" :value="this.teams.d.eq3.id">{{this.teams.d.eq3.name}}</md-checkbox>
+                <md-checkbox v-model="checkedD" :value="this.teams.d.eq4.id">{{this.teams.d.eq4.name}}</md-checkbox>
               </md-list>
             </div>
           </md-list-item>
@@ -50,42 +50,44 @@
             <div class="md-layout-item md-small-size-100 md-size-25">
               <h3>Grupo E</h3>
               <md-list class="md-double-line">
-                <md-checkbox v-model="teams.e.eq1.checked" :value="this.teams.e.eq1.id">{{this.teams.e.eq1.name}}</md-checkbox>
-                <md-checkbox v-model="teams.e.eq2.checked" :value="this.teams.e.eq2.id">{{this.teams.e.eq2.name}}</md-checkbox>
-                <md-checkbox v-model="teams.e.eq3.checked" :value="this.teams.e.eq3.id">{{this.teams.e.eq3.name}}</md-checkbox>
-                <md-checkbox v-model="teams.e.eq4.checked" :value="this.teams.e.eq4.id">{{this.teams.e.eq4.name}}</md-checkbox>
+                <md-checkbox v-model="checkedE" :value="this.teams.e.eq1.id">{{this.teams.e.eq1.name}}</md-checkbox>
+                <md-checkbox v-model="checkedE" :value="this.teams.e.eq2.id">{{this.teams.e.eq2.name}}</md-checkbox>
+                <md-checkbox v-model="checkedE" :value="this.teams.e.eq3.id">{{this.teams.e.eq3.name}}</md-checkbox>
+                <md-checkbox v-model="checkedE" :value="this.teams.e.eq4.id">{{this.teams.e.eq4.name}}</md-checkbox>
               </md-list>
             </div>
             <div class="md-layout-item md-small-size-100 md-size-25">
               <h3>Grupo F</h3>
               <md-list class="md-double-line">
-                <md-checkbox v-model="teams.f.eq1.checked" :value="this.teams.f.eq1.id">{{this.teams.f.eq1.name}}</md-checkbox>
-                <md-checkbox v-model="teams.f.eq2.checked" :value="this.teams.f.eq2.id">{{this.teams.f.eq2.name}}</md-checkbox>
-                <md-checkbox v-model="teams.f.eq3.checked" :value="this.teams.f.eq3.id">{{this.teams.f.eq3.name}}</md-checkbox>
-                <md-checkbox v-model="teams.f.eq4.checked" :value="this.teams.f.eq4.id">{{this.teams.f.eq4.name}}</md-checkbox>
+                <md-checkbox v-model="checkedF" :value="this.teams.f.eq1.id">{{this.teams.f.eq1.name}}</md-checkbox>
+                <md-checkbox v-model="checkedF" :value="this.teams.f.eq2.id">{{this.teams.f.eq2.name}}</md-checkbox>
+                <md-checkbox v-model="checkedF" :value="this.teams.f.eq3.id">{{this.teams.f.eq3.name}}</md-checkbox>
+                <md-checkbox v-model="checkedF" :value="this.teams.f.eq4.id">{{this.teams.f.eq4.name}}</md-checkbox>
               </md-list>
             </div>
             <div class="md-layout-item md-small-size-100 md-size-25">
               <h3>Grupo G</h3>
               <md-list class="md-double-line">
-                <md-checkbox v-model="teams.g.eq1.checked" :value="this.teams.g.eq1.id">{{this.teams.g.eq1.name}}</md-checkbox>
-                <md-checkbox v-model="teams.g.eq2.checked" :value="this.teams.g.eq2.id">{{this.teams.g.eq2.name}}</md-checkbox>
-                <md-checkbox v-model="teams.g.eq3.checked" :value="this.teams.g.eq3.id">{{this.teams.g.eq3.name}}</md-checkbox>
-                <md-checkbox v-model="teams.g.eq4.checked" :value="this.teams.g.eq4.id">{{this.teams.g.eq4.name}}</md-checkbox>
+                <md-checkbox v-model="checkedG" :value="this.teams.g.eq1.id">{{this.teams.g.eq1.name}}</md-checkbox>
+                <md-checkbox v-model="checkedG" :value="this.teams.g.eq2.id">{{this.teams.g.eq2.name}}</md-checkbox>
+                <md-checkbox v-model="checkedG" :value="this.teams.g.eq3.id">{{this.teams.g.eq3.name}}</md-checkbox>
+                <md-checkbox v-model="checkedG" :value="this.teams.g.eq4.id">{{this.teams.g.eq4.name}}</md-checkbox>
               </md-list>
             </div>
             <div class="md-layout-item md-small-size-100 md-size-25">
               <h3>Grupo H</h3>
               <md-list class="md-double-line">
-                <md-checkbox v-model="teams.h.eq1.checked" :value="this.teams.h.eq1.id">{{this.teams.h.eq1.name}}</md-checkbox>
-                <md-checkbox v-model="teams.h.eq2.checked" :value="this.teams.h.eq2.id">{{this.teams.h.eq2.name}}</md-checkbox>
-                <md-checkbox v-model="teams.h.eq3.checked" :value="this.teams.h.eq3.id">{{this.teams.h.eq3.name}}</md-checkbox>
-                <md-checkbox v-model="teams.h.eq4.checked" :value="this.teams.h.eq4.id">{{this.teams.h.eq4.name}}</md-checkbox>
+                <md-checkbox v-model="checkedH" :value="this.teams.h.eq1.id">{{this.teams.h.eq1.name}}</md-checkbox>
+                <md-checkbox v-model="checkedH" :value="this.teams.h.eq2.id">{{this.teams.h.eq2.name}}</md-checkbox>
+                <md-checkbox v-model="checkedH" :value="this.teams.h.eq3.id">{{this.teams.h.eq3.name}}</md-checkbox>
+                <md-checkbox v-model="checkedH" :value="this.teams.h.eq4.id">{{this.teams.h.eq4.name}}</md-checkbox>
               </md-list>
             </div>
           </md-list-item>
         </div>
-
+        <div class="md-layout-item md-size-100 text-right">
+          <md-button class="md-raised md-success" v-on:click.native="endBet();">Finalizar Apuesta</md-button>
+        </div>
       </md-card-content>
     </md-card>
   </form>
@@ -103,182 +105,71 @@ export default {
   },
   data () {
     return {
+      username: 'beracho',
+      checkedBackA: [],
+      checkedBackB: [],
+      checkedBackC: [],
+      checkedBackD: [],
+      checkedBackE: [],
+      checkedBackF: [],
+      checkedBackG: [],
+      checkedBackH: [],
+      checkedA: [],
+      checkedB: [],
+      checkedC: [],
+      checkedD: [],
+      checkedE: [],
+      checkedF: [],
+      checkedG: [],
+      checkedH: [],
       teams: {
         a: {
-          eq1: {
-            name: '',
-            id: '',
-            checked: false
-          },
-          eq2: {
-            name: '',
-            id: '',
-            checked: false
-          },
-          eq3: {
-            name: '',
-            id: '',
-            checked: false
-          },
-          eq4: {
-            name: '',
-            id: '',
-            checked: false
-          }
+          eq1: {name: '', id: ''},
+          eq2: {name: '', id: ''},
+          eq3: {name: '', id: ''},
+          eq4: {name: '', id: ''}
         },
         b: {
-          eq1: {
-            name: '',
-            id: '',
-            checked: false
-          },
-          eq2: {
-            name: '',
-            id: '',
-            checked: false
-          },
-          eq3: {
-            name: '',
-            id: '',
-            checked: false
-          },
-          eq4: {
-            name: '',
-            id: '',
-            checked: false
-          }
+          eq1: {name: '', id: ''},
+          eq2: {name: '', id: ''},
+          eq3: {name: '', id: ''},
+          eq4: {name: '', id: ''}
         },
         c: {
-          eq1: {
-            name: '',
-            id: '',
-            checked: false
-          },
-          eq2: {
-            name: '',
-            id: '',
-            checked: false
-          },
-          eq3: {
-            name: '',
-            id: '',
-            checked: false
-          },
-          eq4: {
-            name: '',
-            id: '',
-            checked: false
-          }
+          eq1: {name: '', id: ''},
+          eq2: {name: '', id: ''},
+          eq3: {name: '', id: ''},
+          eq4: {name: '', id: ''}
         },
         d: {
-          eq1: {
-            name: '',
-            id: '',
-            checked: false
-          },
-          eq2: {
-            name: '',
-            id: '',
-            checked: false
-          },
-          eq3: {
-            name: '',
-            id: '',
-            checked: false
-          },
-          eq4: {
-            name: '',
-            id: '',
-            checked: false
-          }
+          eq1: {name: '', id: ''},
+          eq2: {name: '', id: ''},
+          eq3: {name: '', id: ''},
+          eq4: {name: '', id: ''}
         },
         e: {
-          eq1: {
-            name: '',
-            id: '',
-            checked: false
-          },
-          eq2: {
-            name: '',
-            id: '',
-            checked: false
-          },
-          eq3: {
-            name: '',
-            id: '',
-            checked: false
-          },
-          eq4: {
-            name: '',
-            id: '',
-            checked: false
-          }
+          eq1: {name: '', id: ''},
+          eq2: {name: '', id: ''},
+          eq3: {name: '', id: ''},
+          eq4: {name: '', id: ''}
         },
         f: {
-          eq1: {
-            name: '',
-            id: '',
-            checked: false
-          },
-          eq2: {
-            name: '',
-            id: '',
-            checked: false
-          },
-          eq3: {
-            name: '',
-            id: '',
-            checked: false
-          },
-          eq4: {
-            name: '',
-            id: '',
-            checked: false
-          }
+          eq1: {name: '', id: ''},
+          eq2: {name: '', id: ''},
+          eq3: {name: '', id: ''},
+          eq4: {name: '', id: ''}
         },
         g: {
-          eq1: {
-            name: '',
-            id: '',
-            checked: false
-          },
-          eq2: {
-            name: '',
-            id: '',
-            checked: false
-          },
-          eq3: {
-            name: '',
-            id: '',
-            checked: false
-          },
-          eq4: {
-            name: '',
-            id: '',
-            checked: false
-          }
+          eq1: {name: '', id: ''},
+          eq2: {name: '', id: ''},
+          eq3: {name: '', id: ''},
+          eq4: {name: '', id: ''}
         },
         h: {
-          eq1: {
-            name: '',
-            id: '',
-            checked: false
-          },
-          eq2: {
-            name: '',
-            id: '',
-            checked: false
-          },
-          eq3: {
-            name: '',
-            id: '',
-            checked: false
-          },
-          eq4: {
-            name: '',
-            id: '',
-            checked: false
-          }
+          eq1: {name: '', id: ''},
+          eq2: {name: '', id: ''},
+          eq3: {name: '', id: ''},
+          eq4: {name: '', id: ''}
         }
       }
     }
@@ -354,6 +245,224 @@ export default {
     }, error => {
       console.error(error);
     });
+  },
+  watch: {
+    'checkedA': function (val) {
+      if (this.checkedA.length > 2)
+        this.checkedA.length = 2;
+      else {
+        console.log(this.checkedA.length + ', ' + this.checkedBackA.length);
+        console.log(this.checkedA.length > this.checkedBackA.length);
+        if (this.checkedA.length > this.checkedBackA.length) {
+          // agrega apuesta
+          axios({ method: "POST", "url": "http://localhost:5000/api/bet/newBet", "data": { username: this.username, teamId: this.checkedA[this.checkedA.length - 1] } }).then(result => {
+            this.response = result.data;
+          }, error => {
+            console.error(error);
+          });
+          this.checkedBackA.push(this.checkedA[this.checkedA.length - 1]);
+        } else {
+          // elimina apuesta
+          let aElim = this.checkedBackA.filter(x => !this.checkedA.includes(x))[0];
+          axios({ method: "DELETE", "url": "http://localhost:5000/api/bet/cancelBet", "data": { username: this.username, teamId: aElim } }).then(result => {
+            this.response = result.data;
+          }, error => {
+            console.error(error);
+          });
+          let index = this.checkedBackA.indexOf(aElim);
+          this.checkedBackA.splice(index, 1);
+        }
+      }
+    },
+    'checkedB': function () {
+      if (this.checkedB.length > 2)
+        this.checkedB.length = 2;
+        else {
+        console.log(this.checkedB.length + ', ' + this.checkedBackB.length);
+        console.log(this.checkedB.length > this.checkedBackB.length);
+        if (this.checkedB.length > this.checkedBackB.length) {
+          // agrega apuesta
+          axios({ method: "POST", "url": "http://localhost:5000/api/bet/newBet", "data": { username: this.username, teamId: this.checkedB[this.checkedB.length - 1] } }).then(result => {
+            this.response = result.data;
+          }, error => {
+            console.error(error);
+          });
+          this.checkedBackB.push(this.checkedB[this.checkedB.length - 1]);
+        } else {
+          // elimina apuesta
+          let aElim = this.checkedBackB.filter(x => !this.checkedB.includes(x))[0];
+          axios({ method: "DELETE", "url": "http://localhost:5000/api/bet/cancelBet", "data": { username: this.username, teamId: aElim } }).then(result => {
+            this.response = result.data;
+          }, error => {
+            console.error(error);
+          });
+          let index = this.checkedBackB.indexOf(aElim);
+          this.checkedBackB.splice(index, 1);
+        }
+      }
+    },
+    'checkedC': function () {
+      if (this.checkedC.length > 2)
+        this.checkedC.length = 2;
+      else {
+        console.log(this.checkedC.length + ', ' + this.checkedBackC.length);
+        console.log(this.checkedC.length > this.checkedBackC.length);
+        if (this.checkedC.length > this.checkedBackC.length) {
+          // agrega apuesta
+          axios({ method: "POST", "url": "http://localhost:5000/api/bet/newBet", "data": { username: this.username, teamId: this.checkedC[this.checkedC.length - 1] } }).then(result => {
+            this.response = result.data;
+          }, error => {
+            console.error(error);
+          });
+          this.checkedBackC.push(this.checkedC[this.checkedC.length - 1]);
+        } else {
+          // elimina apuesta
+          let aElim = this.checkedBackC.filter(x => !this.checkedC.includes(x))[0];
+          axios({ method: "DELETE", "url": "http://localhost:5000/api/bet/cancelBet", "data": { username: this.username, teamId: aElim } }).then(result => {
+            this.response = result.data;
+          }, error => {
+            console.error(error);
+          });
+          let index = this.checkedBackC.indexOf(aElim);
+          this.checkedBackC.splice(index, 1);
+        }
+      }
+    },
+    'checkedD': function () {
+      if (this.checkedD.length > 2)
+        this.checkedD.length = 2;
+        else {
+        console.log(this.checkedD.length + ', ' + this.checkedBackD.length);
+        console.log(this.checkedD.length > this.checkedBackD.length);
+        if (this.checkedD.length > this.checkedBackD.length) {
+          // agrega apuesta
+          axios({ method: "POST", "url": "http://localhost:5000/api/bet/newBet", "data": { username: this.username, teamId: this.checkedD[this.checkedA.length - 1] } }).then(result => {
+            this.response = result.data;
+          }, error => {
+            console.error(error);
+          });
+          this.checkedBackD.push(this.checkedD[this.checkedA.length - 1]);
+        } else {
+          // elimina apuesta
+          let aElim = this.checkedBackD.filter(x => !this.checkedD.includes(x))[0];
+          axios({ method: "DELETE", "url": "http://localhost:5000/api/bet/cancelBet", "data": { username: this.username, teamId: aElim } }).then(result => {
+            this.response = result.data;
+          }, error => {
+            console.error(error);
+          });
+          let index = this.checkedBackD.indexOf(aElim);
+          this.checkedBackD.splice(index, 1);
+        }
+      }
+    },
+    'checkedE': function () {
+      if (this.checkedE.length > 2)
+        this.checkedE.length = 2;
+        else {
+        console.log(this.checkedE.length + ', ' + this.checkedBackE.length);
+        console.log(this.checkedE.length > this.checkedBackE.length);
+        if (this.checkedE.length > this.checkedBackE.length) {
+          // agrega apuesta
+          axios({ method: "POST", "url": "http://localhost:5000/api/bet/newBet", "data": { username: this.username, teamId: this.checkedE[this.checkedE.length - 1] } }).then(result => {
+            this.response = result.data;
+          }, error => {
+            console.error(error);
+          });
+          this.checkedBackE.push(this.checkedE[this.checkedE.length - 1]);
+        } else {
+          // elimina apuesta
+          let aElim = this.checkedBackE.filter(x => !this.checkedE.includes(x))[0];
+          axios({ method: "DELETE", "url": "http://localhost:5000/api/bet/cancelBet", "data": { username: this.username, teamId: aElim } }).then(result => {
+            this.response = result.data;
+          }, error => {
+            console.error(error);
+          });
+          let index = this.checkedBackE.indexOf(aElim);
+          this.checkedBackE.splice(index, 1);
+        }
+      }
+    },
+    'checkedF': function () {
+      if (this.checkedF.length > 2)
+        this.checkedF.length = 2;
+        else {
+        console.log(this.checkedF.length + ', ' + this.checkedBackF.length);
+        console.log(this.checkedF.length > this.checkedBackF.length);
+        if (this.checkedF.length > this.checkedBackF.length) {
+          // agrega apuesta
+          axios({ method: "POST", "url": "http://localhost:5000/api/bet/newBet", "data": { username: this.username, teamId: this.checkedF[this.checkedA.length - 1] } }).then(result => {
+            this.response = result.data;
+          }, error => {
+            console.error(error);
+          });
+          this.checkedBackF.push(this.checkedF[this.checkedA.length - 1]);
+        } else {
+          // elimina apuesta
+          let aElim = this.checkedBackF.filter(x => !this.checkedF.includes(x))[0];
+          axios({ method: "DELETE", "url": "http://localhost:5000/api/bet/cancelBet", "data": { username: this.username, teamId: aElim } }).then(result => {
+            this.response = result.data;
+          }, error => {
+            console.error(error);
+          });
+          let index = this.checkedBackF.indexOf(aElim);
+          this.checkedBackF.splice(index, 1);
+        }
+      }
+    },
+    'checkedG': function () {
+      if (this.checkedG.length > 2)
+        this.checkedG.length = 2;
+        else {
+        console.log(this.checkedG.length + ', ' + this.checkedBackG.length);
+        console.log(this.checkedG.length > this.checkedBackG.length);
+        if (this.checkedG.length > this.checkedBackG.length) {
+          // agrega apuesta
+          axios({ method: "POST", "url": "http://localhost:5000/api/bet/newBet", "data": { username: this.username, teamId: this.checkedG[this.checkedA.length - 1] } }).then(result => {
+            this.response = result.data;
+          }, error => {
+            console.error(error);
+          });
+          this.checkedBackG.push(this.checkedG[this.checkedA.length - 1]);
+        } else {
+          // elimina apuesta
+          let aElim = this.checkedBackG.filter(x => !this.checkedG.includes(x))[0];
+          axios({ method: "DELETE", "url": "http://localhost:5000/api/bet/cancelBet", "data": { username: this.username, teamId: aElim } }).then(result => {
+            this.response = result.data;
+          }, error => {
+            console.error(error);
+          });
+          let index = this.checkedBackG.indexOf(aElim);
+          this.checkedBackG.splice(index, 1);
+        }
+      }
+    },
+    'checkedH': function () {
+      if (this.checkedH.length > 2)
+        this.checkedH.length = 2;
+        else {
+        console.log(this.checkedH.length + ', ' + this.checkedBackH.length);
+        console.log(this.checkedH.length > this.checkedBackH.length);
+        if (this.checkedH.length > this.checkedBackH.length) {
+          // agrega apuesta
+          axios({ method: "POST", "url": "http://localhost:5000/api/bet/newBet", "data": { username: this.username, teamId: this.checkedH[this.checkedA.length - 1] } }).then(result => {
+            this.response = result.data;
+          }, error => {
+            console.error(error);
+          });
+          this.checkedBackH.push(this.checkedH[this.checkedA.length - 1]);
+        } else {
+          // elimina apuesta
+          let aElim = this.checkedBackH.filter(x => !this.checkedH.includes(x))[0];
+          axios({ method: "DELETE", "url": "http://localhost:5000/api/bet/cancelBet", "data": { username: this.username, teamId: aElim } }).then(result => {
+            this.response = result.data;
+          }, error => {
+            console.error(error);
+          });
+          let index = this.checkedBackH.indexOf(aElim);
+          this.checkedBackH.splice(index, 1);
+        }
+      }
+    },
   }
 }
 
