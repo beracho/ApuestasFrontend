@@ -36,7 +36,7 @@
   </form>
 </template>
 <script>
-import axios from "axios";
+import axios from 'axios'
 
 export default {
   name: 'new-register-form',
@@ -54,17 +54,17 @@ export default {
     }
   },
   methods: {
-    register: function(){
-      if(this.password == this.repeatPassword) {
+    register: function () {
+      if (this.password === this.repeatPassword) {
         let newUser = {
           username: this.user,
           password: this.password
         }
-        axios({ method: "POST", "url": "http://localhost:5000/api/auth/Register", "data": newUser }).then(result => {
-          this.response = result.data;
+        axios({ method: 'POST', 'url': 'http://localhost:5000/api/auth/Register', 'data': newUser }).then(result => {
+          this.response = result.data
         }, error => {
-          console.error(error);
-        });
+          console.error(error)
+        })
       } else {
         alert('Las contraseñas no son iguales')
       }

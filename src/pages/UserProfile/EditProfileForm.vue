@@ -72,7 +72,7 @@
   </form>
 </template>
 <script>
-import axios from "axios";
+import axios from 'axios'
 
 export default {
   name: 'edit-profile-form',
@@ -95,26 +95,26 @@ export default {
       aboutme: 'Yo sólo quiero apostar y ganar dinero.'
     }
   },
-  mounted() {
+  mounted () {
     if (this.username) {
-      axios({ method: "GET", "url": "http://localhost:5000/api/users/" + this.username }).then(result => {
-        this.response = result.data;
-        this.company = this.response.company;
-        this.telephone = this.response.telephone;
-        this.lastname = this.response.lastName;
-        this.firstname = this.response.firstName;
-        this.address = this.response.address;
-        this.aboutme = this.response.aboutMe;
+      axios({ method: 'GET', 'url': 'http://localhost:5000/api/users/' + this.username }).then(result => {
+        this.response = result.data
+        this.company = this.response.company
+        this.telephone = this.response.telephone
+        this.lastname = this.response.lastName
+        this.firstname = this.response.firstName
+        this.address = this.response.address
+        this.aboutme = this.response.aboutMe
       }, error => {
-        console.error(error);
-      });
+        console.error(error)
+      })
     } else {
-      console.error('Not logged in, Baby.');
+      console.error('Not logged in, Baby.')
     }
   },
   methods: {
-    completeRegister: function(){
-      if(this.password == this.repeatPassword) {
+    completeRegister: function () {
+      if (this.password === this.repeatPassword) {
         let sendUser = {
           username: this.username,
           company: this.company,
@@ -125,11 +125,11 @@ export default {
           password: this.password,
           aboutme: this.aboutme
         }
-        axios({ method: "POST", "url": "http://localhost:5000/api/auth/CompleteRegister", "data": sendUser }).then(result => {
-          this.response = result.data;
+        axios({ method: 'POST', 'url': 'http://localhost:5000/api/auth/CompleteRegister', 'data': sendUser }).then(result => {
+          this.response = result.data
         }, error => {
-          console.error(error);
-        });
+          console.error(error)
+        })
       } else {
         alert('Las contraseñas no son iguales')
       }

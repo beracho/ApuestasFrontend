@@ -8,7 +8,9 @@
       <h6 class="category text-gray">Software Developer</h6>
       <h4 class="card-title">Beracho</h4>
       <p class="card-description">
-          "Los momentos pasan y los minutos también... y luego hasta los segundos. Luego, de segundo en segundo, agarra uno el segundo aire. Y luego tú tan chula que eres. Y uno tan enamorado"</br>Cantinflas
+          "Los momentos pasan y los minutos también... y luego hasta los segundos. Luego, de segundo en segundo, agarra uno el segundo aire. Y luego tú tan chula que eres. Y uno tan enamorado"
+      </p> <p>
+      Cantinflas
       </p>
       <md-button class="md-round md-success">Seguir</md-button>
     </md-card-content>
